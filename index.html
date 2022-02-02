@@ -12,37 +12,30 @@
 </head>
 
 <body>
-    <div class="navbar navbar-expand-md  bg-light navbar-light text-black">
+    <div class="navbar navbar-expand-md  fixed-top navbar-light text-black bg-nav fw-bold">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="images/logo.png" class="img-fluid w-50"></a>
+            <a href="#" class="navbar-brand"><img src="" class="img-fluid w-25">job</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="jobs.html" class="nav-link"> Jobs</a></li>
-                    <li class="nav-item"><a href="jobdetails.html" class="nav-link">Job details</a></li>
-                    <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="companies.html" class="nav-link">Companies</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                               Log in
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Log out</a></li>
-                            </ul>
-                    <li class="nav-item"><a href="loginpage.html" class="nav-link">عربي</a></li>
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item px-3"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item px-3"><a href="jobs.html" class="nav-link"> Jobs</a></li>
+                    <li class="nav-item px-3"><a href="service.html" class="nav-link">Services</a></li>
+                    <li class="nav-item px-3"><a href="companies.html" class="nav-link">Companies</a></li>
+                    <a href="signup.html" class="btn" 
+                        style="border: 1px solid #f4931e;">Sign up</a>
+                    <a href="loginpage.html" class="btn "
+                        style=" background:#f4931e;border: 1px solid #f4931e;">Log in</a>
+
+                    <li class="nav-item px-3"><a href="loginpage.html" class="nav-link">عربي</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <!-- سلايدر -->
-    <section  class="mb-2">
+    <section class="mb-2">
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
@@ -84,7 +77,7 @@
 
     </section>
     <!-- الاعلانات -->
-    <section class="mb-6">
+    <section class="mb-5">
         <div class="container">
             <div class="row text-center">
                 <div class="col">
@@ -96,76 +89,94 @@
     </section>
     <!-- اخر الوظائف -->
 
-    <section class="mb-6"> 
-        <div class="container">
-            <div class="row align-items-center">
-                <h3 class="col">Resent Job</h3>
-                <a href="jobs.html" class="col text-end">Browse All Jobs</a>
-            </div>
-            <div class="row justify-content-between">
-                <div class="col-md-6 col-sm-12  ">
-                    <div class="content border border-dark p-2">
-                        <div class="row  justify-content-lg-between">
-                            <div class="col">
-                                <img src="images/MSF_LOGO.png" alt="" class="img-fluid">
 
-
-                                <div>
-                                    <h5>Animator</h5>
-                                    <h6>Médecins Sans Frontières - Amman, Jordan</h6>
-                                    <p class="py-1 lead">
-                                    <p>Ref. Number: <span>149536 </span></p>
-                                    <p>Date Posted: 30-01-2022</p>
-                                </div>
-                            </div>
-                            <div class="text-end">
-                                <button class="btn btn-outline-danger">More Information</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 ">
-                    <div class="content border border-dark p-2">
-                        <div class="row justify-content-lg-between ">
-                            <div class="col">
-                                <img src="images/MSF_LOGO.png" alt="" class="img-fluid">
-
-                                <div>
-                                    <h5>Animator</h5>
-                                    <h6>Médecins Sans Frontières - Amman, Jordan</h6>
-                                    <p class="py-1 lead">
-                                    <p>Ref. Number: <span>149536 </span></p>
-                                    <p>Date Posted: 30-01-2022</p>
-                                </div>
-                            </div>
-                            <div class="text-end">
-                            <button class="btn btn-outline-danger">More Information</button>
-                            </div>
+    <div class="container m-5">
+        <div class="d-flex justify-content-between">
+            <h4 >Resent Job</h4><a href="jobs.html"> <button class="btn btn-sm btn-outline-dark">Browse All
+                    Jobs</button></a>
+        </div>
+        <div class="row mt-2 g-1">
+            <div class="col-md-3">
+                <div class="card p-2">
+                    <!-- <div class="text-right"> <small>Full Time</small> </div> -->
+                    <div class="text-center mt-2 p-3"> <img src="images/MSF_LOGO.png" alt="" class="img-fluid"> <span
+                            class="d-block fw-bold">Animator</span>
+                        <hr>
+                        <div class="d-flex flex-row align-items-center justify-content-center"> <i
+                                class="fa fa-map-marker"></i> <small class="ml-1">Médecins Sans Frontières - Amman,
+                                Jordan</small> </div>
+                        <div class="d-flex justify-content-between mt-3"> <small class="text-muted">Date Posted:
+                                30-01-2022</small>
+                          <a href="jobdetails.html"> <button class="btn btn-sm btn-outline-dark">More Information</button></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-
+            <div class="col-md-3">
+                <div class="card p-2">
+                    <!-- <div class="text-right"> <small>Full Time</small> </div> -->
+                    <div class="text-center mt-2 p-3"> <img src="images/MSF_LOGO.png" alt="" class="img-fluid"> <span
+                            class="d-block fw-bold">Animator</span>
+                        <hr>
+                        <div class="d-flex flex-row align-items-center justify-content-center"> <i
+                                class="fa fa-map-marker"></i>
+                            <small class="ml-1">Médecins Sans Frontières - Amman,
+                                Jordan</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3"> <small class="text-muted">Date Posted:
+                                30-01-2022</small>
+                        <a href="jobdetails.html"> <button class="btn btn-sm btn-outline-dark">More Information</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-2">
+                    <!-- <div class="text-right"> <small>Full Time</small> </div> -->
+                    <div class="text-center mt-2 p-3"> <img src="images/MSF_LOGO.png" alt="" class="img-fluid"> <span
+                            class="d-block fw-bold">Animator</span>
+                        <hr>
+                        <div class="d-flex flex-row align-items-center justify-content-center"> <i
+                                class="fa fa-map-marker"></i>
+                            <small class="ml-1">Médecins Sans Frontières - Amman,
+                                Jordan</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3"> <small class="text-muted">Date Posted:
+                                30-01-2022</small>
+                        <a href="jobdetails.html"> <button class="btn btn-sm btn-outline-dark">More Information</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-2">
+                    <!-- <div class="text-right"> <small>Full Time</small> </div> -->
+                    <div class="text-center mt-2 p-3"> <img src="images/MSF_LOGO.png" alt="" class="img-fluid"> <span
+                            class="d-block fw-bold">Animator</span>
+                        <hr>
+                        <div class="d-flex flex-row align-items-center justify-content-center"> <i
+                                class="fa fa-map-marker"></i>
+                            <small class="ml-1">Médecins Sans Frontières - Amman,
+                                Jordan</small>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3"> <small class="text-muted">Date Posted:
+                                30-01-2022</small>
+                        <a href="jobdetails.html"> <button class="btn btn-sm btn-outline-dark">More Information</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
+    </div>
 
-            </div>
-            <div class="col">
 
-            </div>
-        </div>
-        </div>
-    </section>
 
     <section>
         <!-- شركائنا -->
 
         <div class="container">
-            <h3>Our parteners</h3>
-            <div class="row">
+            <h3 class="text-center m-5">Our parteners</h3>
+            <div class="row justify-content-center align-items-center">
                 <div class="col">
                     <img src="images/AKS_English_Logo_company.png" alt="" class="img-fluid">
                 </div>
@@ -183,7 +194,7 @@
     <!-- footer -->
 
     <!-- Footer -->
-    <footer class="bg-light text-black">
+    <footer class="bg-footer">
         <!-- Grid container -->
         <div class="container p-4">
 
@@ -191,10 +202,10 @@
             <!-- Section: Links -->
             <section class="">
                 <!--Grid row-->
-                <div class="row justify-content-center g-5">
+                <div class="row g-5">
 
                     <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                         <h5>Akhtaboot</h5>
 
                         <ul class="list-unstyled mb-0">
@@ -202,7 +213,7 @@
                                 <a href="#" class="text-black">About Akhtaboot</a>
                             </li>
                         </ul>
-                        <small class="text-muted">>
+                        <small class="text-muted">
                             Akhtaboot is an online career network,
                             serving the MENA Region. As an employment website, Akhtaboot serves as a platform
                             that connects employers and job seekers,
@@ -212,7 +223,7 @@
                     <!--Grid column-->
 
                     <!--Grid column-->
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="col-lg-4  mb-4 pr-5 mb-md-0">
                         <h5>Employers</h5>
 
                         <ul class="list-unstyled mb-0">
@@ -231,9 +242,9 @@
                         </ul>
                         <h5>Resources</h5>
 
-                        <ul class="list-unstyled mb-0">
+                        <ul class="list-unstyled  mb-0">
                             <li>
-                                <a href="#!" class="text-black">Blog</a>
+                                <a href="#!" class="text-black ">Blog</a>
                             </li>
                             <li>
                                 <a href="#!" class="text-black">Events Calendar</a>
@@ -279,16 +290,16 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="bg-light text-black text-end m-1">
-            Akhtaboot.com 2022
+        <div class="bg-dark copy text-center m-1">
+            Job.com 2022
 
         </div>
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    
-        
+
+
 </body>
 
 </html>
