@@ -22,3 +22,41 @@
 footer h5, .copy{
     color: #f4931e;
 }
+.app-header__menu .dropdown-menu{
+top:15% !important;
+}
+.btn-personal{
+    background-color:#f4931e;
+    color: white;
+}
+.btn-personal:hover{
+    color: #fff;
+}
+.search-wrapper .input-holder .search-icon span::after,.search-wrapper .input-holder .search-icon span::before{
+    border:2px solid #f4931e;
+}
+.search-wrapper .close::before, .search-wrapper .close::after{
+    background:#f4931e;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+    background-color:#f4931e;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #f4931e;
+}
+.nav-link{
+    color: #f4931e;
+}
+@media(max-width: 991.98px){
+.sidebare-active{
+        flex: 0 0 280px !important;
+        width: 280px !important;
+        transform: translateX(0px);
+        position: fixed;
+}
+}
+.bthover:hover{
+   background-color:#f4931e; 
+   color: white;
+}
